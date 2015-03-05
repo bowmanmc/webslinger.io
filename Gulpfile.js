@@ -6,7 +6,7 @@ var gulp =  require('gulp'),
     runSequence = require('run-sequence'),
     run = require('gulp-run'),
     stream = require('event-stream'),
-    watch = require('gulp-watch')
+    watch = require('gulp-watch'),
     wiredep = require('wiredep').stream;
 
 // Task Definitions
