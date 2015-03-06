@@ -2,7 +2,8 @@
   "name": "webslinger.io",
   "version": "1.0.0",
   "dependencies": {
-    "normalize.css": "~3.0.2"
+    "normalize.css": "~3.0.2",
+    "typeplate-starter-kit": "~2.1.0"
   },
   "devDependencies": {}
 }

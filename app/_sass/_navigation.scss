@@ -2,7 +2,7 @@
 .navigation {
     background: $dark_alt;
     border-bottom: 1px solid $light;
-    box-shadow: 0 1px 1em lighten($dark, 50%);
+    box-shadow: 0 1px 1em lighten($dark, 35%);
     width: 100%;
     height: 52px;
     overflow: hidden;
@@ -10,15 +10,5 @@
 
     .navlogo {
         height: 100%;
-    }
-
-    .navtxt {
-        font-size: 60px;
-        color: $light_alt;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: -3px;
-        left: -3px;
     }
 }
