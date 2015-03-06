@@ -7,8 +7,9 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
+    <link rel="stylesheet" href="fonts/leaguegothic.css" />
     <link rel="stylesheet" href="bower_components/typeplate-starter-kit/css/typeplate.css" />
 
     <link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">

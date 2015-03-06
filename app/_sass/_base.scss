@@ -6,9 +6,15 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'league gothic';
+    font-family: 'League Gothic';
     font-weight: bold;
     margin-bottom: 0.75em;
+    text-shadow: 3px 3px 0 rgba($highlight, 0.75);
+}
+
+p + p {
+    // add back some spacing between paragraphs
+    margin-top: -0.75em;
 }
 
 .page-content {
