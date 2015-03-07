@@ -2,6 +2,7 @@
 layout: post
 title:  "Building WebSlinger.io - Github Hosting"
 date:   2015-03-06
+author: '<a href="http://www.twitter.com/webslingerm">Michael Bowman</a>'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu diam eu purus rhoncus efficitur id et nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean posuere sem sit amet tellus cursus bibendum. Suspendisse interdum, neque et ullamcorper dapibus, est lorem bibendum lectus, sit amet vehicula ante dui id nisl. Suspendisse nec elit mollis ex blandit fringilla. Aliquam tincidunt vehicula magna, non ultrices quam lobortis ac. Pellentesque varius id dui viverra porta. Nam odio purus, eleifend nec ligula quis, posuere mattis nisi. Mauris euismod pulvinar vestibulum. Nunc a tincidunt magna. Vivamus porta malesuada neque ac pulvinar.
