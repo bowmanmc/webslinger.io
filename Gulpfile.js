@@ -61,15 +61,17 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('sass', function () {
     browserSync.notify('Running: sass');
     gulp.src('app/styles/**/*.scss')
+        .pipe(debug())
         .pipe(sourcemaps.init())
         .pipe(sass({
-            includePaths: ['scss'],
-            onError: browserSync.notify
+            onError: browserSync.notify,
+            errLogToConsole: true
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(minifyCSS())
         .pipe(rename('site.min.css'))
         .pipe(sourcemaps.write())
+        .pipe(debug())
         .pipe(gulp.dest('app/styles'));
 });
 

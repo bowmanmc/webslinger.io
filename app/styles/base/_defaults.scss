@@ -1,4 +1,4 @@
-
+// Base/default styles for webslinger.io
 body {
     background: lighten($light, 5%);
     font-family: 'Adobe Garamond', 'Garamond', 'Georgia', 'serif';
@@ -10,6 +10,15 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
     margin-bottom: 0.75em;
     text-shadow: 3px 3px 0 $light_alt;
+}
+
+a {
+    color: darken($highlight, 10%);
+    text-decoration: underline;
+}
+a:hover {
+    color: lighten($highlight, 10%);
+    text-decoration: underline;
 }
 
 p + p {

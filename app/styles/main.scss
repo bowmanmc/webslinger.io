@@ -1,7 +1,8 @@
-@charset "utf-8";
+@charset 'utf-8';
 
-@import "colors",
-        "base",
-        "navigation"
-        //"syntax-highlighting"
+@import 'colors',
+        'base/defaults',
+        'components/navigation',
+        'components/postlist',
+        'pages/post'
 ;
