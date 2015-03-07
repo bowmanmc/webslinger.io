@@ -1,0 +1,81 @@
+
+var gulp =  require('gulp'),
+    browserSync = require('browser-sync'),
+    path = require('path'),
+    plugins = require('gulp-load-plugins')(),
+    runSequence = require('run-sequence'),
+    wiredep = require('wiredep').stream;
+
+// Task Definitions
+gulp.task('default', ['develop']);
+
+gulp.task('develop', ['jekyll', 'watch']);
+
+gulp.task('watch', ['browser-sync'], function() {
+
+    //gulp.watch(config.markup.src, ['html', browserSync.reload]);
+    // Any changes in the app directory, run jekyll and reload the browser
+    gulp.watch('app/**/*', ['jekyll']);
+
+    //gulp.watch('build/index.html', function() {
+    gulp.watch('build/index.html').on('change', function() {
+        gulp.src('build/**/*.html')
+            .pipe(plugins.tap(function(file) {
+                var outDir = path.dirname(file.path);
+                gulp.src(file.path)
+                    .pipe(plugins.debug())
+                    .pipe(plugins.usemin({
+                        'path': 'build',
+                        'css': [plugins.minifyCss(), 'concat']
+                    }))
+                    .pipe(gulp.dest(outDir));
+            }));
+    });
+
+
+    // Whenever bower.json changes, update our css/js imports in our
+    // header/footer html files
+    gulp.watch('bower.json', ['bower']);
+});
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        port: 9000,
+        reloadDelay: 2000,
+        server: {
+            baseDir: 'build'
+        }
+    });
+});
+
+gulp.task('usemin', function() {
+    gulp.src('build/**/*.html')
+        .pipe(plugins.tap(function(file, t) {
+            var outDir = path.dirname(file.path);
+            gulp.src(file.path)
+                .pipe(plugins.debug())
+                .pipe(plugins.usemin({
+                    'path': 'build',
+                    'css': ['concat', plugins.minifyCss()]
+                }))
+                .pipe(gulp.dest(outDir));
+        }));
+});
+
+gulp.task('jekyll', function() {
+    var cmd = new plugins.run.Command('jekyll build --source app --destination build');
+    cmd.exec(function() {
+        console.log('JEKYLL BUILD FINISHED!');
+    });
+});
+
+gulp.task('bower', function () {
+    var src = ['app/_includes/head.html', 'app/_includes/footer.html'];
+    console.log('Running bower wiredep on: ' + JSON.stringify(src));
+    gulp.src(src)
+        .pipe(wiredep({
+            src: src,
+            ignorePath: '..'
+        }))
+        .pipe(gulp.dest('app/_includes'));
+});
