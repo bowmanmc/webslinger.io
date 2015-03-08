@@ -3,7 +3,12 @@ layout: post
 title:  "Building WebSlinger.io - Github Hosting"
 date:   2015-03-06
 author: '<a href="http://www.twitter.com/webslingerm">Michael Bowman</a>'
+excerpt: 'This should be the first paragraph of my post about hosting pages on
+          github. I want it to be the except for the posts list page, but not
+          show above the header image on the posts page.'
 ---
+
+<img class="post-header-img" src="/assets/2015-03-06-github-header.jpg" />
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu diam eu purus rhoncus efficitur id et nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean posuere sem sit amet tellus cursus bibendum. Suspendisse interdum, neque et ullamcorper dapibus, est lorem bibendum lectus, sit amet vehicula ante dui id nisl. Suspendisse nec elit mollis ex blandit fringilla. Aliquam tincidunt vehicula magna, non ultrices quam lobortis ac. Pellentesque varius id dui viverra porta. Nam odio purus, eleifend nec ligula quis, posuere mattis nisi. Mauris euismod pulvinar vestibulum. Nunc a tincidunt magna. Vivamus porta malesuada neque ac pulvinar.
 

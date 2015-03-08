@@ -27,6 +27,7 @@ gulp.task('watch', function () {
         'app/_includes/*.html',
         'app/_posts/*',
         'app/_config.yml',
+        'app/assets/*',
         'app/styles/*.css'
     ], ['jekyll-rebuild']);
     //gulp.watch('app/scripts/**/*.js', ['js']);
