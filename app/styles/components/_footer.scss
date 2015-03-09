@@ -1,0 +1,39 @@
+
+.footer {
+    background: lighten($dark, 15%);
+    bottom: 0;
+    color: $light;
+    position: fixed;
+    width: 100%;
+
+    .fnav {
+        //background: lighten($dark, 35%);
+        border-bottom: 1px solid $dark;
+        margin: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .fnav a {
+        color: $light_alt;
+        font-family: 'League Gothic';
+        font-size: 175%;
+        font-weight: bold;
+        letter-spacing: 0.075em;
+        text-decoration: none;
+        text-shadow: 2px 2px 0 lighten($dark, 10%);
+    }
+    .fnav a:hover {
+        color: $light;
+    }
+
+    .fnav ul {
+        margin: 0;
+        padding: 0;
+    }
+    .fnav li {
+        display: inline;
+        list-style-type: none;
+        padding: 0 1.0em;
+    }
+}
