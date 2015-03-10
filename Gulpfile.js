@@ -12,6 +12,7 @@ var rename      = require('gulp-rename');
 var sass        = require('gulp-sass');
 var sourcemaps  = require('gulp-sourcemaps');
 var uglify      = require('gulp-uglify');
+var wiredep     = require('wiredep').stream;
 
 
 gulp.task('default', ['develop']);
@@ -30,6 +31,7 @@ gulp.task('watch', function () {
         'app/assets/*',
         'app/styles/*.css'
     ], ['jekyll-rebuild']);
+    gulp.watch('bower.json', ['bower']);
     //gulp.watch('app/scripts/**/*.js', ['js']);
     // gulp.watch('src/images/**/*.+(png|jpeg|jpg|gif|svg)', ['images']);
 });
@@ -86,6 +88,17 @@ gulp.task('vendor', function() {
     .pipe(concat('vendor.min.css'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/styles'));
+});
+
+gulp.task('bower', function () {
+    var src = ['app/_includes/head.html', 'app/_includes/footer.html'];
+    console.log('Running bower wiredep on: ' + JSON.stringify(src));
+    gulp.src(src)
+        .pipe(wiredep({
+            src: src,
+            ignorePath: '..'
+        }))
+        .pipe(gulp.dest('app/_includes'));
 });
 
 // gulp.task('js', function() {
