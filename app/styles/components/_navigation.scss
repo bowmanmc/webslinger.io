@@ -9,70 +9,35 @@
     padding: 0;
 
     .navlogo {
+        float: left;
         height: 100%;
     }
 
     .menu {
-        float: right;
-        display: inline;
-        margin-right: 1.0em;
+        //margin: none;
+        float: left;
     }
-}
 
-// From: http://sarasoueidan.com/blog/navicon-transformicons/
+    .menu a {
+        color: $light_alt;
+        font-family: 'League Gothic';
+        font-size: 135%;
+        font-weight: bold;
+        letter-spacing: 0.075em;
+        text-decoration: none;
+        text-shadow: 2px 2px 0 $dark_alt;
+    }
+    .menu a:hover {
+        color: $light;
+    }
 
-//variables are used to make the buttons more flexible and easier to customize
-//these variables are replaced with their values in the compiled CSS
-$base : 0.55rem;
-$space : $base/4;
-$color : $light;
-$transition: 0.30s;
-
-button {
-  display: inline-block;
-  margin: 0 1em;
-  outline: none;
-  border: none;
-  background: none;
-}
-button span {
-  display: block;
-}
-
-.grid-button {
-  padding: $base*2; //2rem
-  cursor: pointer;
-  user-select: none;
-}
-
-.grid-button .grid {
-    width: $base;
-    height: $base;
-    background: $color;
-    color: $color; /* Not in use when the colors are specified below */
-    transition: $transition;
-}
-.grid-button.rearrange .grid{
-    box-shadow:
-      -($base+$space) 0 -($base+$space),
-      0 0 -($base+$space),
-      ($base+$space) (-($base + $space)),
-      -($base+$space) 0,
-      $base+$space 0,
-      -($base+$space) ($base + $space),
-      0 ($base+$space),
-      ($base+$space) ($base + $space);
-
-}
-.grid-button.rearrange.close .grid{
-      box-shadow:
-        0 0 -$base,
-        0 0 -$base*2,
-        $base 0,
-        -$base*2 0,
-        $base*2 0,
-        -$base 0,
-        0 $base*2,
-        0 $base;
-      transform: rotate3d(0,0,1,-45deg)  scale3d(.8,.8,.8);
+    .menu ul {
+        margin: 0;
+        padding: 0.25em 0;
+    }
+    .menu li {
+        display: inline;
+        list-style-type: none;
+        padding: 0 0.75em;
+    }
 }

@@ -81,6 +81,7 @@ gulp.task('sass', function () {
 gulp.task('vendor', function() {
     gulp.src([
         'app/bower_components/normalize.css/normalize.css',
+        'app/foundation-5.5.1.custom/css/foundation.css',
         'app/bower_components/typeplate-starter-kit/css/typeplate.css'
     ])
     .pipe(sourcemaps.init())
