@@ -1,0 +1,12 @@
+
+$hs-size: 256px;
+
+.about-headshot {
+    border: 1px solid $light;
+    border-radius: $hs-size / 2;
+    box-shadow: 1px 1px 7px lighten($dark, 25%);
+    float: left;
+    height: 256px;
+    margin: 0 1.5em 1.5em 0;
+    width: 256px;
+}

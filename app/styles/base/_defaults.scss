@@ -21,20 +21,14 @@ a:hover {
     text-decoration: underline;
 }
 
-// typeplate overrides
+p {
+    text-indent: 0;
+}
+// add back in some spacing between paragraphs
 p + p {
-    // add back some spacing between paragraphs
     margin-top: -0.75em;
+    text-indent: 0;
 }
-.typl8-drop-cap:first-letter {
-    color: $highlight;
-    font-size: 5em;
-    font-weight: bold;
-    margin: 0;
-    margin-right: 10px;
-    padding: 0 5px;
-}
-
 
 // This is the main container for all of our content
 .page-content {

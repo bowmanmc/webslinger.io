@@ -28,6 +28,9 @@ gulp.task('watch', function () {
         'app/_includes/*.html',
         'app/_posts/*',
         'app/_config.yml',
+        'app/*.html',
+        'app/*.md',
+        'app/*.yml',
         'app/assets/*',
         'app/styles/*.css'
     ], ['jekyll-rebuild']);
