@@ -19,12 +19,15 @@
         margin-bottom: 1.0em;
     }
 
-    p {
-        text-indent: 0;
+    .fcontent {
+        font-size: 85%;
+
+        p {
+            text-indent: 0;
+        }
     }
 
     .fnav {
-        //border-bottom: 1px solid lighten($dark, 45%);
         margin: none;
         text-align: center;
         width: 100%;
