@@ -14,16 +14,19 @@
     }
 
     .menu {
-        //margin: none;
-        float: left;
+        float: right;
+
+        .menu-btn {
+            padding: 0.35em 0.75em;
+        }
     }
 
     .menu a {
         color: $light_alt;
         font-family: 'League Gothic';
-        font-size: 135%;
+        font-size: 150%;
         font-weight: bold;
-        letter-spacing: 0.075em;
+        letter-spacing: 0.085em;
         text-decoration: none;
         text-shadow: 2px 2px 0 $dark_alt;
     }
@@ -33,10 +36,10 @@
 
     .menu ul {
         margin: 0;
-        padding: 0.25em 0;
+        padding: 0.35em 0;
     }
     .menu li {
-        display: inline;
+        //display: inline;
         list-style-type: none;
         padding: 0 0.75em;
     }
