@@ -21,6 +21,20 @@ a:hover {
     text-decoration: underline;
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    background: lighten($dark, 35%);
+    background-image: linear-gradient(
+        left,
+        lighten($dark, 65%),
+        lighten($dark, 45%),
+        lighten($dark, 65%)
+    );
+    margin: 0;
+    margin-bottom: 1.0em;
+}
+
 p {
     text-indent: 0;
 }

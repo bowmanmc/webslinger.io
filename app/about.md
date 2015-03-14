@@ -28,15 +28,21 @@ where we gather local experts in the data visualization field quarterly and
 share ideas on tools and techniques. We always have an excellent turnout
 and it's been awesome meeting so many people in the Dayton area working
 on such cool stuff! It's free to join and a great way to spend a lunch
-break!
+break. I hope to see you there!
 
 Did I mention that I love
-[speaking at conferences](/speaking)?
+[speaking at conferences and meetups](/speaking)? Please contact me via
+[twitter](https://twitter.com/webslingerm) or
+[linkedin](https://www.linkedin.com/in/bowmanmc)
+if you're interested in having me talk about D3.js or web maps at your next event.
+
+<hr />
 
 This site was built with
 [Jekyll](http://jekyllrb.com),
-[Gulp](http://gulpjs.com),
+[Foundation](http://foundation.zurb.com/),
 [Typeplate](http://typeplate.com),
+[Gulp](http://gulpjs.com),
 and a slew of other front-end technologies. If you'd like to learn more about
 how it is built and maintained, see my blog post
 [Building WebSlinger.io](/),
