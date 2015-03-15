@@ -1,0 +1,14 @@
+
+.twitter-quotes {
+    margin-bottom: 3.0em;
+    list-style-type: none;
+
+    img {
+        border-radius: 0.35em;
+        box-shadow: 0 0 3px lighten($dark, 50%);
+    }
+
+    li {
+        margin-bottom: 1.0em;
+    }
+}
