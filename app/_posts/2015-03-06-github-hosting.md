@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Building WebSlinger.io - Github Hosting"
+title:  "First post"
 date:   2015-03-06
 author: '<a href="http://www.twitter.com/webslingerm">Michael Bowman</a>'
-excerpt: 'This should be the first paragraph of my post about hosting pages on
-          github. I want it to be the except for the posts list page, but not
-          show above the header image on the posts page.'
+excerpt: "Did you know you can host static pages on GitHub for free? With a
+          little bit of configuration, you can even host them while using
+          your own domain name. In this post, I'll show you how to set it all up."
 ---
 
 <img class="post-header-img" src="/assets/2015-03-06-github-header.jpg" />

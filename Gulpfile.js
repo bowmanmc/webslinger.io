@@ -26,6 +26,7 @@ gulp.task('watch', function () {
         'app/index.html',
         'app/_layouts/*.html',
         'app/_includes/*.html',
+        'app/_drafts/*',
         'app/_posts/*',
         'app/_config.yml',
         'app/*.html',
@@ -54,7 +55,7 @@ gulp.task('jekyll-build', function (done) {
     browserSync.notify('Running: jekyll build');
     return cp.spawn(
             'jekyll',
-            ['build', '--source', 'app', '--destination', 'build'],
+            ['build', '--drafts', '--source', 'app', '--destination', 'build'],
             { stdio: 'inherit' }
         ).on('close', done);
 });
