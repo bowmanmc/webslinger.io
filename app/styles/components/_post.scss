@@ -10,11 +10,12 @@
     }
     .typl8-drop-cap:first-letter {
         color: $highlight;
-        font-size: 5em;
+        font-size: 6.0em;
         font-weight: bold;
         margin: 0;
         margin-right: 10px;
-        padding: 0 5px;
+        padding: 0;
+        //padding-bottom: 2px;
     }
 }
 
@@ -23,9 +24,18 @@
     font-size: 80%;
 }
 
-.post-header-img {
+.post-banner {
+    background: #eeeeef;
+    background-image: linear-gradient(#fff, #dde);
     border-radius: 0.5em;
-    width: 100%;
+    margin: 0;
+    margin-bottom: 1.75em;
+    padding: 0;
+
+    img {
+        border-radius: 0.5em;
+        width: 100%;
+    }
 }
 
 .highlight {
