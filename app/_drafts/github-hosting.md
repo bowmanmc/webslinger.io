@@ -72,7 +72,7 @@ the commits this revision, then pushes the changes up to GitHub.
 
 Now, open a browser and check http://username.github.io/project, where
 "username" is your GitHub username and "project" is the name of your project.
-If everything worked correctly, you should the plain index.html we just created
+If everything worked correctly, you should see the plain index.html we just created
 with a title of "Howdy" and a headline saying "Hello there from GitHub pages!".
 If you have problems, wait a few minutes and check again (it can sometimes
 take a little time for GitHub's publishing scripts to do their work). Also,
