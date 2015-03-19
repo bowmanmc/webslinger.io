@@ -1,0 +1,20 @@
+/**
+ * Media query from
+ * https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+ * (iphone 6)
+ * Took out some of the conditions since I want to target all mobile devices
+ */
+@media only screen and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 2) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .highlight {
+        font-size: 12px;
+    }
+
+    .typl8-giga {
+        font-size: 3rem;
+    }
+}
