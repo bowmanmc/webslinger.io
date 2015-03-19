@@ -46,6 +46,13 @@ p + p {
     text-indent: 0;
 }
 
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+
 // This is the main container for all of our content
 .page-content {
     max-width: 740px;

@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="/images/Michael-Headshot.jpg"
     alt="Michael Bowman"
-    class="about-headshot" />
+    class="headshot" />
 
 Howdy! My name is Michael Bowman and I like to build websites and make maps.
 
