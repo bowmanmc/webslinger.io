@@ -1,0 +1,4 @@
+* header reveal on scroll
+* menu
+* /blog - post list (add date)
+
