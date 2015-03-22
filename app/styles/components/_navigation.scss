@@ -18,6 +18,19 @@
         height: 100%;
     }
 
+    .coords {
+        color: rgba($light_alt, 0.2);
+        font-family: $font_header;
+        font-size: 150%;
+        display: inline;
+        float: left;
+        line-height: 0.80em;
+        margin: 0;
+        margin-top: -0.025em;
+        padding: 0;
+
+    }
+
     .menu {
         float: right;
 
@@ -28,10 +41,10 @@
 
     .menu a {
         color: $light_alt;
-        font-family: 'League Gothic';
+        font-family: $font_header;
         font-size: 150%;
         font-weight: bold;
-        letter-spacing: 0.085em;
+        letter-spacing: 0.095em;
         text-decoration: none;
         text-shadow: 2px 2px 0 $dark_alt;
     }
@@ -41,15 +54,16 @@
 
     .menu ul {
         margin: 0;
-        padding: 0.35em 0;
     }
     .menu li {
-        //display: inline;
+        display: inline;
         list-style-type: none;
         padding: 0 0.75em;
     }
 }
 
+
+// Headroom
 @keyframes slideDown {
     0% {
         transform: translateY(-100%);

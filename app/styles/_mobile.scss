@@ -4,7 +4,7 @@
  * (iphone 6)
  * Took out some of the conditions since I want to target all mobile devices
  */
-@media only screen and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 400px) {// and (-webkit-device-pixel-ratio: 2) {
 
     body {
         font-size: 18px;
@@ -16,5 +16,14 @@
 
     .typl8-giga {
         font-size: 3rem;
+    }
+
+    .navigation {
+        .navlogo {
+            margin-left: -260px;
+        }
+        .coords {
+            display: none;
+        }
     }
 }

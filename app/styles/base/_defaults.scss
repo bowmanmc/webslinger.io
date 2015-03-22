@@ -1,13 +1,15 @@
 // Base/default styles for webslinger.io
+$font_header: 'League Gothic'; // leaguegothic.css
+$font_body: 'Adobe Garamond', 'Garamond', 'Georgia', 'Times New Roman', 'serif';
 body {
     background: lighten($light, 5%);
     background-image: url('../images/seamless_paper_texture.jpg');
-    font-family: 'Adobe Garamond', 'Garamond', 'Georgia', 'Times New Roman', 'serif';
+    font-family: $font_body;
     font-size: 24px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'League Gothic'; // leaguegothic.css
+    font-family: $font_header;
     font-weight: bold;
     margin-bottom: 0.75em;
     text-shadow: 3px 3px 0 $light_alt;
