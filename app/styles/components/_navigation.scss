@@ -35,7 +35,13 @@
         float: right;
 
         .menu-btn {
-            padding: 0.35em 0.75em;
+            border: 1px solid lighten($dark, 5%);
+            border-radius: 0.25em;
+            box-shadow: 1px 1px 2px $dark_alt;
+            cursor: pointer;
+            display: none; // hide on desktops and tablets
+            margin-right: 1.0em;
+            padding: 0.5em;
         }
     }
 

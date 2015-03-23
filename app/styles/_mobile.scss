@@ -4,7 +4,7 @@
  * (iphone 6)
  * Took out some of the conditions since I want to target all mobile devices
  */
-@media only screen and (max-device-width: 400px) {// and (-webkit-device-pixel-ratio: 2) {
+@media (max-device-width: 400px) {// and (-webkit-device-pixel-ratio: 2) {
 
     body {
         font-size: 18px;
@@ -24,6 +24,14 @@
         }
         .coords {
             display: none;
+        }
+        .menu {
+            .menu-btn {
+                display: inline;
+            }
+            .menu-list {
+                display: none;
+            }
         }
     }
 }

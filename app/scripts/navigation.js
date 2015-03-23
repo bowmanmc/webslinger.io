@@ -1,9 +1,11 @@
 $(function() {
     // Setup the site navigation
     $('#menu-btn').click(function() {
-        console.log('#menu-btn clicked!');
-        $('#menu-btn').toggleClass('close');
+        $('html, body').animate({
+            scrollTop: $("#footer").offset().top
+        }, 500);
     });
+    $('#menu-btn-link').removeAttr('href'); // remove the href if js is enabled
 
     $("#navigation").headroom({
         "offset": 70,
