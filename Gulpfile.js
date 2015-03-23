@@ -34,6 +34,7 @@ gulp.task('watch', function () {
         'app/*.yml',
         'app/assets/*',
         'app/images/*',
+        'app/scripts/*',
         'app/styles/*.css'
     ], ['jekyll-rebuild']);
     gulp.watch('bower.json', ['bower']);

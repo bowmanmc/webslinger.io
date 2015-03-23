@@ -73,3 +73,13 @@
         }
     }
 }
+
+.top-btn {
+    background: rgba(#fff, 0.5);
+    border-radius: 0.5em;
+    color: $highlight;
+    cursor: pointer;
+    font-size: 80%;
+    margin-right: 1.0em;
+    padding: 0.25em 1.5em;
+}
