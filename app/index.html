@@ -6,6 +6,10 @@ layout: default
     {% for post in site.posts %}
         <li>
             <h2 class="typl8-alpha"><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
+            <div class="date">
+                <span class="day">{{ post.date | date: '%d' }}</span>
+                <span class="mon">{{ post.date | date: '%B' }}</span>
+            </div>
             <p>{{ post.excerpt }}</p>
             <hr />
         </li>
