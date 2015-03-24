@@ -7,8 +7,8 @@ excerpt: "WebSlinger.io is built using Jekyll and Gulp (along with some plugins
           a fast workflow up and running."
 ---
 
-<div class="post-banner">
-    <img src="/assets/2015-03-06-github-header.jpg" />
+<div class="post-image">
+    <img src="/assets/jim-carrey-fast-typing.jpg" alt="Jim Carrey Fast Typing" />
 </div>
 
 <p class="typl8-drop-cap">
