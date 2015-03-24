@@ -35,13 +35,16 @@
         float: right;
 
         .menu-btn {
-            border: 1px solid lighten($dark, 5%);
-            border-radius: 0.25em;
-            box-shadow: 1px 1px 2px $dark_alt;
             cursor: pointer;
             display: none; // hide on desktops and tablets
-            margin: 5px 1.0em;
-            padding: 0.25em 0.75em;
+            height: 100%;
+            margin: 0 1.5em;
+            padding-top: 0.5em;
+
+            svg {
+                height: 32px;
+                width: 32px;
+            }
         }
     }
 
@@ -68,6 +71,11 @@
     }
 }
 
+.hamburger {
+    height: 32px;
+    fill: $light_alt;
+    width: 32px;
+}
 
 // Headroom
 @keyframes slideDown {

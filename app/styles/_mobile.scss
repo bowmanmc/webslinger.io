@@ -1,10 +1,5 @@
-/**
- * Media query from
- * https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
- * (iphone 6)
- * Took out some of the conditions since I want to target all mobile devices
- */
-@media (max-device-width: 400px) {// and (-webkit-device-pixel-ratio: 2) {
+// Target mobile phones and tablets in portrait
+@media (max-width: 900px) {
 
     body {
         font-size: 18px;
