@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Web Slinger - Michael Bowman</title>
-    <meta name="description" content="Personal website of Michael Bowman - Dayton, Ohio.
-">
+    <title>Building WebSlinger.io - Github Hosting</title>
+    <meta name="description" content="Did you know you can host websites on GitHub for free? With a little bit of configuration, you can even host them while using your own domain name. In this p...">
 
     <link rel="stylesheet" href="/fonts/leaguegothic.css" />
     <link rel="stylesheet" href="/styles/vendor.min.css" />
     <link rel="stylesheet" href="/styles/site.min.css" />
 
-    <link rel="canonical" href="http://webslinger.io//">
+    <link rel="canonical" href="http://webslinger.io//2015/03/23/github-hosting.html">
 
     <link rel="alternate" type="application/rss+xml" title="Web Slinger - Michael Bowman" href="http://webslinger.io/ /feed.xml " />
 
@@ -69,29 +68,123 @@
 
 
     <div class="page-content">
-        <ul class="post-list">
-    
-        <li>
-            <h2 class="typl8-alpha"><a class="post-link" href="/2015/03/24/hack-design.html">Hack Design - Level Up via Email</a></h2>
-            <div class="date">
-                <span class="day">24</span>
-                <span class="mon">March</span>
-            </div>
-            <p>One of my goals for this year has been to level up my design skills. I want to be able to put the same level of thought and craftsmanship into my design decisions as I do on the development side of things. One of the better resources for me so far has been Hack Design, a design course over weekly emails.</p>
-            <hr />
-        </li>
-    
-        <li>
-            <h2 class="typl8-alpha"><a class="post-link" href="/2015/03/23/github-hosting.html">Building WebSlinger.io - Github Hosting</a></h2>
-            <div class="date">
-                <span class="day">23</span>
-                <span class="mon">March</span>
-            </div>
-            <p>Did you know you can host websites on GitHub for free? With a little bit of configuration, you can even host them while using your own domain name. In this post, I'll show you how to set it all up.</p>
-            <hr />
-        </li>
-    
-</ul>
+        <header class="post-header">
+    <h1 class="typl8-giga">Building WebSlinger.io - Github Hosting</h1>
+
+    <p class="post-meta">
+        Posted 
+        
+            by <a href="http://www.twitter.com/webslingerm">Michael Bowman</a>
+        
+        on March 23rd, 2015
+    </p>
+</header>
+
+<article class="post-content">
+    <div class="post-image">
+    <img src="/assets/2015-vla.jpg" alt="Very Large Array" />
+    <div class="credit">
+        Image courtesy of NRAO/AUI
+        <a href="http://images.nrao.edu/Telescopes/VLA/92">VLA at Sunset</a>
+    </div>
+</div>
+
+<p class="typl8-drop-cap">
+<a href="https://github.com">GitHub</a> is an awesome resource for developers.
+Besides providing a safe, secure, organized place to store the source code for
+your projects, it also has a way publish static files to the web.
+I use it for this site, and in this post, I'll show you how I set it up.
+</p>
+
+<p>The first step is to create a github account and repository.
+GitHub has
+the best step-by-step instructions on how to do this. Go to their
+<a href="https://help.github.com">help site</a>
+and follow the
+<a href="https://help.github.com/articles/set-up-git">Setup Git</a> and
+<a href="https://help.github.com/articles/create-a-repo">Create a Repo</a> guides.
+Once you have a repository created and checked out on your local machine, you’ll
+use a feature called
+<a href="https://help.github.com/articles/user-organization-and-project-pages/#project-pages">GitHub Pages</a>
+to serve static files out to your users.
+This feature of GitHub will automatically publish anything checked into a
+specially named branch (gh-pages) to a url corresponding to your project name.</p>
+
+<p>To create the GitHub pages branch, open a terminal and navigate to the root
+directory for your checked out project. Then type the following:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git branch gh-pages
+git checkout gh-pages</code></pre></div>
+
+<p>The first command, “git branch gh-pages”, created a gh-pages branch. The second
+command, “git checkout gh-pages” switched your local, working source tree to
+that branch. Now, let’s open a text editor and create an index.html file in
+our new branch:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Howdy<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Hello there from GitHub pages!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<p>So far, so good. Now, we need to commit our changes and push them to GitHub so
+we can see them.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git add .
+git commit
+git push --set-upstream origin gh-pages</code></pre></div>
+
+<p>This set of commands first adds the new index.html file we created to git,
+the commits this revision, then pushes the changes up to GitHub.</p>
+
+<p>Now, open a browser and check http://username.github.io/project, where
+“username” is your GitHub username and “project” is the name of your project.
+If everything worked correctly, you should see the plain index.html we just created
+with a title of “Howdy” and a headline saying “Hello there from GitHub pages!”.
+If you have problems, wait a few minutes and check again (it can sometimes
+take a little time for GitHub’s publishing scripts to do their work). Also,
+be sure you named your branch exactly “gh-pages”. This is the special branch
+GitHub Pages is looking for. If you’re still having problems, check out
+the <a href="https://help.github.com/articles/user-organization-and-project-pages/#project-pages">GitHub Pages Help</a>.</p>
+
+<hr />
+
+<p>Ok, the next step is to point your custom domain name at the url we just used.
+I manage my domain names through <a href="http://namecheap.com">NameCheap</a>. Your
+provider may be different, but the process should be similar. Go to the
+management page for your domain name and look for an option called
+“URL Forwarding”. Here you’ll want to create two CNAME entries, one for when
+someone enters http://yourAwesomeDomain.com and another one for when
+someone enters http://www.yourAwesomeDomain.com. Here’s a screenshot of
+my entries for webslinger.io:</p>
+
+<div class="post-image">
+    <img src="/assets/2015-namecheap-webslinger-urlforwarding.png" alt="CNAME Entries" />
+</div>
+
+<p>The final piece of this puzzle is to create a CNAME file next to index.html (in
+the root of your project). This file should be named “CNAME” (all caps, with
+no extension) and contain your domain name (without the preceding http:// or www).
+For example, my CNAME file for this site looks like:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">webslinger.io</code></pre></div>
+
+<p>After committing and pushing the CNAME file, you should be able to access your
+site at http://yourAwesomeDomain.com and see the index.html in your gh-pages
+branch. The source code for this site is on GitHub, so you can always refer
+to it for reference and see how my code is setup. My master branch, containing
+the raw source code and build files, is at
+<a href="https://github.com/bowmanmc/webslinger.io">https://github.com/bowmanmc/webslinger.io</a>
+and the built version of that code (what you’re looking at now) is available
+in the gh-pages branch at
+<a href="https://github.com/bowmanmc/webslinger.io/tree/gh-pages">https://github.com/bowmanmc/webslinger.io/tree/gh-pages</a>.</p>
+
+</article>
+
+</div>
 
     </div>
 
