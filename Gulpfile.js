@@ -9,16 +9,34 @@ var imagemin    = require('gulp-imagemin');
 var minifyCSS   = require('gulp-minify-css');
 var prefix      = require('gulp-autoprefixer');
 var rename      = require('gulp-rename');
+var rimraf      = require('rimraf');
 var sass        = require('gulp-sass');
 var sourcemaps  = require('gulp-sourcemaps');
 var uglify      = require('gulp-uglify');
 var wiredep     = require('wiredep').stream;
 
+var GH_PAGES_BRANCH = '/tmp/webslinger.io';
 
 gulp.task('default', ['develop']);
 gulp.task('develop', ['browser-sync', 'watch']);
 gulp.task('build', ['sass', 'vendor']);
 
+gulp.task('dist', ['build', 'jekyll-build', 'clean-dist'], function() {
+
+    console.log('Publishing to: ' + GH_PAGES_BRANCH);
+    gulp.src('build/**/*')
+        .pipe(gulp.dest(GH_PAGES_BRANCH));
+});
+
+gulp.task('clean-dist', function (done) {
+    console.log('Cleaning dist: ' + GH_PAGES_BRANCH);
+    // return cp.spawn(
+    //         'rm',
+    //         ['-rf', GH_PAGES_BRANCH + '/*'],
+    //         { stdio: 'inherit' }
+    //     ).on('close', done);
+    rimraf(GH_PAGES_BRANCH + '/*', done);
+});
 
 gulp.task('watch', function () {
     gulp.watch('app/styles/**/*.scss', ['sass']);
@@ -38,8 +56,6 @@ gulp.task('watch', function () {
         'app/styles/*.css'
     ], ['jekyll-rebuild']);
     gulp.watch('bower.json', ['bower']);
-    //gulp.watch('app/scripts/**/*.js', ['js']);
-    // gulp.watch('src/images/**/*.+(png|jpeg|jpg|gif|svg)', ['images']);
 });
 
 // Initial setup... Wait for jekyll-build, then launch the Server
@@ -57,7 +73,8 @@ gulp.task('jekyll-build', function (done) {
     browserSync.notify('Running: jekyll build');
     return cp.spawn(
             'jekyll',
-            ['build', '--drafts', '--source', 'app', '--destination', 'build'],
+            ['build', '--source', 'app', '--destination', 'build'],
+            //['build', '--drafts', '--source', 'app', '--destination', 'build'],
             { stdio: 'inherit' }
         ).on('close', done);
 });
