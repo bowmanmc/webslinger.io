@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Speaking
+section: speaking
 permalink: /speaking/
 ---
 

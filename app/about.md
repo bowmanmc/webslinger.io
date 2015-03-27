@@ -1,6 +1,8 @@
 ---
 layout: page
+section: profile
 title: About
+type: profile
 permalink: /about/
 ---
 

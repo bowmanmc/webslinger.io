@@ -3,6 +3,8 @@ layout: post
 date: '2015-03-24'
 title:  'Hack Design - Level Up via Email'
 author: '<a href="http://www.twitter.com/webslingerm">Michael Bowman</a>'
+keywords: 'Web Development, Web Design, Hack Design, Level Up'
+section: 'Web Design'
 excerpt: "One of my goals for this year has been to level up my design skills.
           I want to be able to put the same level of thought and craftsmanship
           into my design decisions as I do on the development side of things.

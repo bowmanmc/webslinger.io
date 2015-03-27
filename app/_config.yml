@@ -1,9 +1,9 @@
 # Site settings
 title: Web Slinger - Michael Bowman
 email: bowmanmc@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Personal website of Michael Bowman - Dayton, Ohio.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+description: Web Slinger - Michael Bowman - Dayton, Ohio
+baseurl: ""
+keywords: "Web Design, Web Development, Cartography, Maps, Web Slinger, Michael Bowman, Dayton, Ohio"
 url: "http://webslinger.io"
 twitter_username: webslingerm
 github_username:  bowmanmc
