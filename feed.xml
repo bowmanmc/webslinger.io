@@ -2,18 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Slinger - Michael Bowman</title>
-    <description>Personal website of Michael Bowman - Dayton, Ohio.
-</description>
-    <link>http://webslinger.io//</link>
-    <atom:link href="http://webslinger.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Mar 2015 19:10:30 -0400</pubDate>
-    <lastBuildDate>Wed, 25 Mar 2015 19:10:30 -0400</lastBuildDate>
+    <description>Web Slinger - Michael Bowman - Dayton, Ohio</description>
+    <link>http://webslinger.io/</link>
+    <atom:link href="http://webslinger.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 28 Mar 2015 15:57:36 -0400</pubDate>
+    <lastBuildDate>Sat, 28 Mar 2015 15:57:36 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Hack Design - Level Up via Email</title>
         <description>&lt;div class=&quot;post-image&quot;&gt;
-    &lt;img src=&quot;/assets/hackdesign.png&quot; alt=&quot;Hack Design website in Chrome&quot; /&gt;
+    &lt;img src=&quot;/assets/hackdesign.png&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p class=&quot;typl8-drop-cap&quot;&gt;
@@ -54,8 +53,8 @@ until next week’s lesson.&lt;/p&gt;
 perfect for helping me hit my goal of becoming a better designer this year.&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Mar 2015 00:00:00 -0400</pubDate>
-        <link>http://webslinger.io//2015/03/24/hack-design.html</link>
-        <guid isPermaLink="true">http://webslinger.io//2015/03/24/hack-design.html</guid>
+        <link>http://webslinger.io/2015/03/24/hack-design.html</link>
+        <guid isPermaLink="true">http://webslinger.io/2015/03/24/hack-design.html</guid>
         
         
       </item>
@@ -63,7 +62,7 @@ perfect for helping me hit my goal of becoming a better designer this year.&lt;/
       <item>
         <title>Building WebSlinger.io - Github Hosting</title>
         <description>&lt;div class=&quot;post-image&quot;&gt;
-    &lt;img src=&quot;/assets/2015-vla.jpg&quot; alt=&quot;Very Large Array&quot; /&gt;
+    &lt;img src=&quot;/assets/2015-vla.jpg&quot; /&gt;
     &lt;div class=&quot;credit&quot;&gt;
         Image courtesy of NRAO/AUI
         &lt;a href=&quot;http://images.nrao.edu/Telescopes/VLA/92&quot;&gt;VLA at Sunset&lt;/a&gt;
@@ -164,8 +163,8 @@ in the gh-pages branch at
 &lt;a href=&quot;https://github.com/bowmanmc/webslinger.io/tree/gh-pages&quot;&gt;https://github.com/bowmanmc/webslinger.io/tree/gh-pages&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
-        <link>http://webslinger.io//2015/03/23/github-hosting.html</link>
-        <guid isPermaLink="true">http://webslinger.io//2015/03/23/github-hosting.html</guid>
+        <link>http://webslinger.io/2015/03/23/github-hosting.html</link>
+        <guid isPermaLink="true">http://webslinger.io/2015/03/23/github-hosting.html</guid>
         
         
       </item>

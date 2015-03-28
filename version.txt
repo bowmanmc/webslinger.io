@@ -1,0 +1,7 @@
+
+WebSlinger.io
+=============
+Version: 1.0.1
+Build Time: 2015-03-28 15:57:37
+Build Host: Krypto.local [darwin]
+
