@@ -5,8 +5,12 @@ var clean       = require('gulp-clean');
 var concat      = require('gulp-concat');
 var cp          = require('child_process');
 var debug       = require('gulp-debug');
+var fs          = require('fs');
 var imagemin    = require('gulp-imagemin');
 var minifyCSS   = require('gulp-minify-css');
+var moment      = require('moment');
+var os          = require("os");
+var pkg         = require('./package.json');
 var prefix      = require('gulp-autoprefixer');
 var rename      = require('gulp-rename');
 var rimraf      = require('rimraf');
@@ -22,10 +26,19 @@ gulp.task('develop', ['browser-sync', 'watch']);
 gulp.task('build', ['sass', 'vendor']);
 
 gulp.task('dist', ['build', 'jekyll-build', 'clean-dist'], function() {
-
     console.log('Publishing to: ' + GH_PAGES_BRANCH);
     gulp.src('build/**/*')
         .pipe(gulp.dest(GH_PAGES_BRANCH));
+    var ver = GH_PAGES_BRANCH + '/version.txt';
+    var now = moment();
+
+    fs.appendFileSync(ver, '\nWebSlinger.io');
+    fs.appendFileSync(ver, '\n=============');
+    fs.appendFileSync(ver, '\nVersion: ' + pkg.version);
+    fs.appendFileSync(ver, '\nBuild Time: ' + now.format('YYYY-MM-DD HH:mm:ss'));
+    fs.appendFileSync(ver, '\nBuild Host: ' + os.hostname() + ' [' + os.platform() + ']');
+    fs.appendFileSync(ver, '\n');
+    fs.appendFileSync(ver, '\n');
 });
 
 gulp.task('clean-dist', function (done) {
