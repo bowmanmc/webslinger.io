@@ -4,6 +4,7 @@ date: '2015-03-23'
 title:  'Building WebSlinger.io - Github Hosting'
 author: '<a href="http://www.twitter.com/webslingerm">Michael Bowman</a>'
 keywords: 'Web Development, GitHub, GH Pages, git'
+image: '/assets/2015-vla.jpg'
 section: 'Web Development'
 excerpt: "Did you know you can host websites on GitHub for free? With a
           little bit of configuration, you can even host them while using
@@ -11,7 +12,7 @@ excerpt: "Did you know you can host websites on GitHub for free? With a
 ---
 
 <div class="post-image">
-    <img src="/assets/2015-vla.jpg" alt="Very Large Array" />
+    <img src="{{ page.image }}" />
     <div class="credit">
         Image courtesy of NRAO/AUI
         <a href="http://images.nrao.edu/Telescopes/VLA/92">VLA at Sunset</a>

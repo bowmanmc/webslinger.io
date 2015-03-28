@@ -1,12 +1,13 @@
 # Site settings
 title: Web Slinger - Michael Bowman
 email: bowmanmc@gmail.com
+twitter_username: webslingerm
+github_username:  bowmanmc
 description: Web Slinger - Michael Bowman - Dayton, Ohio
 baseurl: ""
 keywords: "Web Design, Web Development, Cartography, Maps, Web Slinger, Michael Bowman, Dayton, Ohio"
 url: "http://webslinger.io"
-twitter_username: webslingerm
-github_username:  bowmanmc
+image: "/images/Michael-Headshot.jpg"
 
 # Build settings
 markdown: kramdown
