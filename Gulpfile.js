@@ -17,6 +17,7 @@ var rimraf      = require('rimraf');
 var sass        = require('gulp-sass');
 var sourcemaps  = require('gulp-sourcemaps');
 var uglify      = require('gulp-uglify');
+var uncss       = require('gulp-uncss');
 var wiredep     = require('wiredep').stream;
 
 var GH_PAGES_BRANCH = '/tmp/webslinger.io';
@@ -112,6 +113,7 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.write())
         .pipe(debug())
         .pipe(gulp.dest('app/styles'));
+
 });
 
 gulp.task('vendor', function() {
